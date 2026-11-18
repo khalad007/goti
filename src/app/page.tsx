@@ -1,16 +1,9 @@
-import { site } from "@/lib/site";
+import Hero from "@/components/sections/Hero";
 
 export default function Home() {
   return (
     <main id="top">
-      <section className="flex h-screen flex-col items-center justify-center gap-4">
-        <h1 className="font-display text-[20vw] leading-none tracking-tight text-accent">
-          {site.name}
-        </h1>
-        <p className="text-sm uppercase tracking-[0.4em] text-muted">
-          {site.tagline}
-        </p>
-      </section>
+      <Hero />
 
       <section
         id="categories"
