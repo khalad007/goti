@@ -1,24 +1,13 @@
 import Hero from "@/components/sections/Hero";
-<<<<<<< HEAD
 import Manifesto from "@/components/sections/Manifesto";
-=======
->>>>>>> 86860d7a688811f4c24dc5ae946911ff732224b3
+import Categories from "@/components/sections/Categories";
 
 export default function Home() {
   return (
     <main id="top">
       <Hero />
-<<<<<<< HEAD
       <Manifesto />
-=======
->>>>>>> 86860d7a688811f4c24dc5ae946911ff732224b3
-
-      <section
-        id="categories"
-        className="flex h-screen items-center justify-center border-t border-line bg-surface"
-      >
-        <p className="font-display text-[12vw] leading-none">CATEGORIES</p>
-      </section>
+      <Categories />
 
       <section
         id="parts"
