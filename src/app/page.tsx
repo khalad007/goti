@@ -1,11 +1,17 @@
 import Hero from "@/components/sections/Hero";
+<<<<<<< HEAD
 import Manifesto from "@/components/sections/Manifesto";
+=======
+>>>>>>> 86860d7a688811f4c24dc5ae946911ff732224b3
 
 export default function Home() {
   return (
     <main id="top">
       <Hero />
+<<<<<<< HEAD
       <Manifesto />
+=======
+>>>>>>> 86860d7a688811f4c24dc5ae946911ff732224b3
 
       <section
         id="categories"
