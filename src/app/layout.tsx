@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
+import "lenis/dist/lenis.css";
 import "./globals.css";
+import SmoothScroll from "@/components/ui/SmoothScroll";
+import ScrollProgress from "@/components/ui/ScrollProgress";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -27,7 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bebas.variable} ${inter.variable} grain antialiased`}>
-        {children}
+        <SmoothScroll>
+          <ScrollProgress />
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );
