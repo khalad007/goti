@@ -4,6 +4,8 @@ import "lenis/dist/lenis.css";
 import "./globals.css";
 import SmoothScroll from "@/components/ui/SmoothScroll";
 import ScrollProgress from "@/components/ui/ScrollProgress";
+import Preloader from "@/components/ui/Preloader";
+import Navbar from "@/components/ui/Navbar";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -31,7 +33,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${bebas.variable} ${inter.variable} grain antialiased`}>
         <SmoothScroll>
+          <Preloader />
           <ScrollProgress />
+          <Navbar />
           {children}
         </SmoothScroll>
       </body>

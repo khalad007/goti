@@ -17,7 +17,13 @@ export default function SmoothScroll({
       duration: 1.2,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
+      anchors: true,
     });
+
+    // locked until the preloader finishes
+    lenis.stop();
+    const onReady = () => lenis.start();
+    window.addEventListener("goti:ready", onReady);
 
     lenis.on("scroll", ScrollTrigger.update);
 
@@ -26,6 +32,7 @@ export default function SmoothScroll({
     gsap.ticker.lagSmoothing(0);
 
     return () => {
+      window.removeEventListener("goti:ready", onReady);
       gsap.ticker.remove(tick);
       lenis.destroy();
     };
