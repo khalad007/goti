@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import Manifesto from "@/components/sections/Manifesto";
 import Categories from "@/components/sections/Categories";
+import Parts from "@/components/sections/Parts";
 
 export default function Home() {
   return (
@@ -8,15 +9,7 @@ export default function Home() {
       <Hero />
       <Manifesto />
       <Categories />
-
-      <section
-        id="parts"
-        className="flex h-screen items-center justify-center border-t border-line"
-      >
-        <p className="font-display text-[12vw] leading-none text-accent">
-          PARTS
-        </p>
-      </section>
+      <Parts />
 
       <section
         id="stats"
